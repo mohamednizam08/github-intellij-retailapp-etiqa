@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.example.retailapp.ProductServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.081 s <<< FAILURE! -- in com.example.retailapp.ProductServiceTest
+com.example.retailapp.ProductServiceTest.uploadDelimitedFile_parsesRows -- Time elapsed: 0.080 s <<< ERROR!
+java.lang.NumberFormatException: Character a is neither a decimal digit number, decimal point, nor "e" notation exponential mark.
+	at java.base/java.math.BigDecimal.<init>(BigDecimal.java:629)
+	at java.base/java.math.BigDecimal.<init>(BigDecimal.java:518)
+	at java.base/java.math.BigDecimal.<init>(BigDecimal.java:924)
+	at com.example.retailapp.service.ProductService.uploadDelimitedFile(ProductService.java:64)
+	at com.example.retailapp.ProductServiceTest.uploadDelimitedFile_parsesRows(ProductServiceTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
